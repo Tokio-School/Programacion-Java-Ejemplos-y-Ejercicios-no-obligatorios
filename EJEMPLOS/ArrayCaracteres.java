@@ -1,3 +1,5 @@
+package ud04;
+
 import java.util.Scanner;
 
 public class ArrayCaracteres {
@@ -11,7 +13,9 @@ public class ArrayCaracteres {
         cuenta = teclado.nextLine();
         char[] digitosCuenta = cuenta.toCharArray();
         for (char c : digitosCuenta) {
-          System.out.println(c);
+
         }
+
 	}
+
 }
