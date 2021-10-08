@@ -7,21 +7,21 @@ public class Ejercicio3_1 {
 
 	public static void main(String[] args) {
 		
-		//Programa para adivinar un número con intentos limitados
+		//Programa para adivinar un nÃºmero con intentos limitados
 		
 		Scanner keyboard = new Scanner(System.in);
         final int TRIES = 5;
         int userTries = 0;
 
-        // TODO También se puede pedir al usuario que introduzca datos como dificultad, número de intentos o bien
-        // los limites dentro de los cuale el ordenador se puede pensar el número
+        // TODO TambiÃ©n se puede pedir al usuario que introduzca datos como dificultad, nÃºmero de intentos o bien
+        // los limites dentro de los cuale el ordenador se puede pensar el nÃºmero
 
-        // El ordenador se piensa un número
+        // El ordenador se piensa un nÃºmero
         Random generator = new Random();
         int computerValue = generator.nextInt(19) + 1;
 
         while (userTries < TRIES) {
-            // Se pide número al usuario
+            // Se pide nÃºmero al usuario
 
             // Se comprueba si el usuario ha acertado y se le da la pista correspondiente
 
