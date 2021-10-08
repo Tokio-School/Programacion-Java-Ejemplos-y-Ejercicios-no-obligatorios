@@ -2,7 +2,6 @@
 
 Bienvenid@s a este repositorio de Programación Java, dentro encontrarán ejemplos y ejercicios propuestos durante el curso.
 El repositorio esta dividido en dos partes, por un lado tenemos una carpeta con ejemplos y por otro una carpeta de ejercicios no obligatorios para practicar.
-Cada carpeta tiene en su interior un archivo de texto con los enunciados de los ejercicios.
 ***
 
 **CARPETA EJEMPLOS**
