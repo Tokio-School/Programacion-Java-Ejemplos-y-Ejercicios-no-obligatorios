@@ -6,7 +6,7 @@ public class Ejercicio6_tokio {
 
 	public static void main(String[] args) {
 		
-		/*Realiza un programa que muestre el fragmento de la cadena de texto a partir de la posición de una palabra determinada (ambas
+		/*Realiza un programa que muestre el fragmento de la cadena de texto a partir de la posiciÃ³n de una palabra determinada (ambas
 		cadenas introducidas por el usuario)*/
 		
 		Scanner entrada=new Scanner(System.in);
