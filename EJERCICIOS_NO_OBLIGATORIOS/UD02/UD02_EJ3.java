@@ -7,13 +7,13 @@ public class Ejercicio3 {
 
 	public static void main(String[] args) {
 		
-		//Ejercicio 3. Realiza un programa que muestre por pantalla un número aleatorio entre dos valores introducidos por el usuario
+		//Ejercicio 3. Realiza un programa que muestre por pantalla un nÃºmero aleatorio entre dos valores introducidos por el usuario
 		
 		Scanner keyboard = new Scanner(System.in);
 
-	       System.out.print("Introduzca el primer número: ");
+	       System.out.print("Introduzca el primer nÃºmero: ");
 	       String number1 = keyboard.nextLine();
-	       System.out.print("Introduzca el segundo número: ");
+	       System.out.print("Introduzca el segundo nÃºmero: ");
 	       String number2 = keyboard.nextLine();
 
 	       int value1 = Integer.parseInt(number1);
@@ -21,7 +21,7 @@ public class Ejercicio3 {
 
 	       Random generator = new Random();
 	       int randomValue = generator.nextInt(value2 - value1) + value1;
-	       System.out.println("El número aleatorio generado entre esos valores es " + randomValue);
+	       System.out.println("El nÃºmero aleatorio generado entre esos valores es " + randomValue);
 
 	}
 
