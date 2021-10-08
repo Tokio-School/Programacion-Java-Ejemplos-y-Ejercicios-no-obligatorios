@@ -21,11 +21,11 @@ public class Cadenas {
             apellidos = teclado.nextLine();
         } while (apellidos.isEmpty());
         do {
-            System.out.print("Crea una contraseña (4 digitos mínimo): ");
+            System.out.print("Crea una contraseÃ±a (4 digitos mÃ­nimo): ");
             contrasena = teclado.nextLine();
         } while (contrasena.length() < 4);
 
-        System.out.println("¿Te gusta Java? [si/NO]");
+        System.out.println("Â¿Te gusta Java? [si/NO]");
         String respuesta = teclado.nextLine();
         if (respuesta.equals("si"))
             gustaJava = true;
