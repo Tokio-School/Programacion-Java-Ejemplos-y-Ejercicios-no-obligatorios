@@ -6,25 +6,25 @@ public class Ejercicio2 {
 
 	public static void main(String[] args) {
 		
-		//Escribe un programa que indique si un número introducido por el usuario es par o impar
+		//Escribe un programa que indique si un nÃºmero introducido por el usuario es par o impar
 		
 		Scanner keyboard = new Scanner(System.in);
 
-        System.out.print("Introduzca un número: ");
+        System.out.print("Introduzca un nÃºmero: ");
         String number = keyboard.nextLine();
 
-        // Comprobar si los valores introducidos son correctos (numéricos)
+        // Comprobar si los valores introducidos son correctos (numÃ©ricos)
         if ((!number.matches("[0-9]*"))) {
-            System.out.println("El número introducido no es correcto");
+            System.out.println("El nÃºmero introducido no es correcto");
             // Sale del programa
             System.exit(0);
         }
 
         int value = Integer.parseInt(number);
         if (value % 2 == 0) {
-            System.out.println("El número es par");
+            System.out.println("El nÃºmero es par");
         } else {
-            System.out.println("El número es impar");
+            System.out.println("El nÃºmero es impar");
         }
 
 	}
