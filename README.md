@@ -1,4 +1,4 @@
-# Programacion-Java-Ejemplos-y-Ejercicios-no-obligatorios
+# Programacion Java: Ejemplos y Ejercicios no obligatorios
 
 Bienvenid@s al repositorio de Programación Java: Ejemplos y Ejercicios no obligatorios, dentro encontrarán ejemplos y ejercicios propuestos durante el curso.
 El repositorio esta dividido en dos partes, por un lado tenemos los ejemplos, por otrolos ejercicios no obligatorios para practicar.
