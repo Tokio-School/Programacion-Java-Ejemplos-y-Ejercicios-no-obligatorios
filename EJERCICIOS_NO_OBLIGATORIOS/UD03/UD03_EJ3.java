@@ -16,7 +16,7 @@ public class Ejercicio3 {
         int posicionPrimerSeparador = fecha.indexOf("/");
         int posicionSegundoSeparador = fecha.indexOf("/", posicionPrimerSeparador + 1);
         if (posicionPrimerSeparador == -1 || posicionSegundoSeparador == -1) {
-            System.out.println("El separador utilizado no es v·lido");
+            System.out.println("El separador utilizado no es v√°lido");
             System.exit(0);
         }
 
