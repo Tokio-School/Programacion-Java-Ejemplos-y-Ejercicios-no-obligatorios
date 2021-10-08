@@ -11,9 +11,6 @@ desde la declaración e inicialización de variables hasta los arrays y cadenas 
 ***
 
 **CARPETA EJERCICIOS NO OBLIGATORIOS**
-- Esta carpeta contiene por un
-- Esta carpeta contiene todos los ejercicios no obligatorios que figuran en los PDFs descargables desde la 
-plataforma. Los ejercicios correspondientes a las unidades dos, tres y cuatro se encuentran sueltos ya que 
-no requieren de otros archivos para su funcionamiento completo.
-Dentro de esta carpeta se encuentran también subcarpetas para las siguientes unidades, y cada una de ellas
-contiene a su vez las carpetas con los ejercicios que forman parte de la unidad.
+- Esta carpeta contiene una subcarpeta para cada unidad didáctica del Módulo 1. Dentro se encuentran algunos de los ejercicios no obligatorios
+ de la unidad ya resueltos. Los enunciados de los ejercicios se pueden ver en los archivos "Léeme.md" o "Enunciados.md" que se encuentran dentro de las carpetas.
+ Estos enunciados también se pueden descargar desde la plataforma de Tokio School entrando en la Unidad Didactica correspondiente.
