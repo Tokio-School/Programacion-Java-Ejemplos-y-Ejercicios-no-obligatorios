@@ -6,13 +6,13 @@ public class Ejercicio2_1 {
 
 	public static void main(String[] args) {
 		
-		//Modifica el programa anterior para que sólo liste por la pantalla los números pares entre los dos valores límite
+		//Modifica el programa anterior para que sÃ³lo liste por la pantalla los nÃºmeros pares entre los dos valores lÃ­mite
 		
 		Scanner keyboard = new Scanner(System.in);
 
-        System.out.print("Introduzca el valor mínimo: ");
+        System.out.print("Introduzca el valor mÃ­nimo: ");
         String number1 = keyboard.nextLine();
-        System.out.print("Introduzca el valor máximo: ");
+        System.out.print("Introduzca el valor mÃ¡ximo: ");
         String number2 = keyboard.nextLine();
 
         int minValue = Integer.parseInt(number1);
