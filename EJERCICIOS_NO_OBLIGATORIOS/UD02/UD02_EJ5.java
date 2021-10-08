@@ -19,7 +19,7 @@ public class Ejercicio5_tokio {
 				
 		if(frase1.contains(frase2)) {
 			
-			System.out.println("Se han encontrado similitudes, parte de su segunda frase está dentro de la primera.");
+			System.out.println("Se han encontrado similitudes, parte de su segunda frase estÃ¡ dentro de la primera.");
 			
 		}else {
 			
