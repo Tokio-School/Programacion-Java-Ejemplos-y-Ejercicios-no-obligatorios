@@ -9,9 +9,9 @@ public class Ejercicio4 {
 		Scanner keyboard = new Scanner(System.in);
 
         System.out.println("Conversor de monedas Tokio");
-        System.out.println("1. Pasar de Euros a D髄ares");
-        System.out.println("2. Pasar de D髄ares a Euros");
-        System.out.print("Opci髇> ");
+        System.out.println("1. Pasar de Euros a D贸lares");
+        System.out.println("2. Pasar de D贸lares a Euros");
+        System.out.print("Opci贸n> ");
         String choice = keyboard.nextLine();
 
         switch (choice) {
@@ -20,17 +20,17 @@ public class Ejercicio4 {
                 String number = keyboard.nextLine();
                 float value = Float.parseFloat(number);
                 float result = value * 0.86f;
-                System.out.println(value + " Euros son " + result + " D髄ares");
+                System.out.println(value + " Euros son " + result + " D贸lares");
                 break;
             case "2":
                 System.out.print("Introduzca la cantidad: ");
                 number = keyboard.nextLine();
                 value = Float.parseFloat(number);
                 result = value * 1.17f;
-                System.out.println(value + " D髄ares son " + result + " Euros");
+                System.out.println(value + " D贸lares son " + result + " Euros");
                 break;
             default:
-                System.out.println("Opci髇 incorrecta");
+                System.out.println("Opci贸n incorrecta");
                 System.exit(0);
                 break;
         }
