@@ -1,0 +1,2 @@
+Prueba de datos en fichero
+Hay varias líneas
