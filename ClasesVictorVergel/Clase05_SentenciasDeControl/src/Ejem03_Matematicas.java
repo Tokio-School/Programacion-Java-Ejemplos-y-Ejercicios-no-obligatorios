@@ -4,6 +4,10 @@ public class Ejem03_Matematicas {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
+		System.out.println(Math.PI);
+		
+		
+		
 		double numero = -5.5;
 		double valorAbsoluto = Math.abs(numero);
 		System.out.println("Valor absoluto de " + numero + " es " + valorAbsoluto);
@@ -11,7 +15,7 @@ public class Ejem03_Matematicas {
 		double numero2 = 25;
 		double raizCuadrada = Math.sqrt(numero2);
 		System.out.println("La raíz cuadrada de " + numero2 + " es " + raizCuadrada);
-
+		
 		double base = 2;
 		double exponente = 3;
 		double resultado = Math.pow(base, exponente);
@@ -30,7 +34,7 @@ public class Ejem03_Matematicas {
 		long redondeado3 = Math.round(numero5);
 		System.out.println("Redondeado: " + redondeado3);
 
-		
+		//float numeroFloat=3.3f;
 		double numero6 = 10;
 		double numero7 = 20;
 		double maximo = Math.max(numero6, numero7);

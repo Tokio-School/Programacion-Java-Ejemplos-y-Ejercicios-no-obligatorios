@@ -6,7 +6,9 @@ public class Ejem01_Scanner {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-	
+		// Si queremos finalizar la ejecuci´no de una aplicaci´no.
+		// System.exit(0);
+		
 		// Scanner por teclado
 		Scanner teclado=new Scanner(System.in);
 		int nota=0;
@@ -33,15 +35,20 @@ public class Ejem01_Scanner {
         try {
             File file = new File("datos.txt");
             Scanner scannerFichero = new Scanner(file);
+            int contadorLinea=0;
             while (scannerFichero.hasNextLine()) {
+            	contadorLinea++;
+            	
                 String linea = scannerFichero.nextLine();
-                System.out.println(linea);
+                if (contadorLinea==3)
+                	System.out.println(linea);
             }
-            scanner.close();
+            scannerFichero.close();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
         
+        System.out.println("Hola \t mundo \n java. Estamos explicando como mostrar una \\ en consola");
 	}
 
 }

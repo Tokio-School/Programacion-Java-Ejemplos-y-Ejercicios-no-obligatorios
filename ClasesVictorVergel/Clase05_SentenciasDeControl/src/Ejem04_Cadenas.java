@@ -11,10 +11,11 @@ public class Ejem04_Cadenas {
 
 		// Concatenación de cadenas
 		String resultadoConcatenacion = cadena1 + cadena2;
-		System.out.println("Concatenación: " + resultadoConcatenacion);
+		System.out.println("Concatenación: " + resultadoConcatenacion+"---"+String.valueOf(false));
 
 		// Longitud de una cadena
 		int longitud = cadena1.length();
+		
 		System.out.println("Longitud de cadena1: " + longitud);
 
 		// Conversión a mayúsculas y minúsculas
@@ -54,7 +55,7 @@ public class Ejem04_Cadenas {
                 contador++;
             }
         }
-			
+		System.out.println("numero de vocales:"+contador);	
 
 	}
 
