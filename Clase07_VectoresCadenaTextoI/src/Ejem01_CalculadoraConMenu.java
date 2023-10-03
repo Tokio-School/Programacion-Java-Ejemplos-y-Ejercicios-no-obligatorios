@@ -13,9 +13,11 @@ public class Ejem01_CalculadoraConMenu {
      * @param args the arguments
      */
     public static void main(String[] args) {
+        
+        boolean continuar=false;
         Scanner scanner = new Scanner(System.in);
-        boolean continuar=true;
         do  {
+        	
             // Mostrar el menú
             System.out.println("Calculadora");
             System.out.println("1. Sumar");
@@ -68,8 +70,8 @@ public class Ejem01_CalculadoraConMenu {
     /**
      * Sumar.
      *
-     * @param a the a
-     * @param b the b
+     * @param a Este es el primer número metido por el usuario
+     * @param b Este es el segundo número metido por el usuario
      * @return the double
      */
     public static double sumar(double a, double b) {

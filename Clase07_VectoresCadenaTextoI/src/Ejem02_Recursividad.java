@@ -9,7 +9,6 @@ public class Ejem02_Recursividad {
 		long factorialsSinRecursividad = calcularFactorialSinRecursividad(numero);
 		System.out.println("El factorial de " + numero + " es " + factorialsSinRecursividad);		
 		
-		
 	
 		//Calcular la suma de los número pares hasta un determinado número
 		int n = 5; 

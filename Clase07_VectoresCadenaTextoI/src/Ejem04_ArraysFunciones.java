@@ -7,11 +7,12 @@ public class Ejem04_ArraysFunciones {
 		int[] numeros = { 5, 2, 9, 1, 5, 6, 3 };
 
 		//Nuevo bucle con arrays.
-		for (int i : numeros) {
-			System.out.print(i+" ");
+		for (int valor : numeros) {
+			System.out.print(valor+" ");
 		}
+		System.out.println(" ");
 		
-		
+	
 		// Mostrar el array original
 		System.out.println("array original: " + Arrays.toString(numeros));
 
@@ -22,15 +23,17 @@ public class Ejem04_ArraysFunciones {
 		System.out.println("array ordenado: " + Arrays.toString(numeros));
 
 		// Buscar un elemento en el array (por ejemplo, el número 5)
-		int elementoBuscado = 5;
+		int elementoBuscado = 55;
 		int indice = Arrays.binarySearch(numeros, elementoBuscado);
 
+		
 		if (indice >= 0) {
 			System.out.println("El elemento " + elementoBuscado + " se encuentra en la posición " + indice);
 		} else {
 			System.out.println("El elemento " + elementoBuscado + " no se encuentra en el array.");
 		}
 
+		
 		// Creación de un array de cadenas
 		String[] nombres = { "Carlos", "Pedro", "Maria", "Luisa" };
 
