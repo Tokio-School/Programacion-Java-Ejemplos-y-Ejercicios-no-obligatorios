@@ -10,11 +10,18 @@ public class Aplicacion {
 		
 		Persona maria=new Persona("Maria", 18, false);
 		
-		Persona miguelAngel=new Persona("Miguel Angel", 19, false);
+		Persona miguelAngel=new Persona("Miguel Angel", 19, true);
 		
+		//maria.nombre="Maria Jimenez";
+		maria.setNombre("Maria Jimenez");
 		
+		maria.imprimirDatosPersona();
+		miguelAngel.imprimirDatosPersona();
 		
+		System.out.println("--->"+maria.imprimirDatosPersona2());
 		
+		System.out.println("-------------------");
+		miguelAngel.imprimirDatosPersona(true);
 	}
 
 }
