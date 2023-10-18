@@ -14,4 +14,26 @@ public class Biblioteca {
     public void prestarLibro(Libro libro, Usuario usuario) {
         // Lógica para realizar un préstamo
     }
+
+	public Libro[] getColeccionLibros() {
+		return coleccionLibros;
+	}
+
+	public void setColeccionLibros(Libro[] coleccionLibros) {
+		this.coleccionLibros = coleccionLibros;
+	}
+    
+	public void borrarLibro(String tituloLibro)
+	{
+		//System.out.println(coleccionLibros[0].getTitulo());
+		System.out.println(tituloLibro);
+		for (int i = 0; i < coleccionLibros.length; i++) {
+			//if (coleccionLibros[i].getTitulo().equalsIgnoreCase(tituloLibro))
+			if (coleccionLibros[i].getTitulo().equals(tituloLibro))
+			{
+				coleccionLibros[i]=null;
+			}
+		}
+	}
+    
 }
