@@ -1,4 +1,4 @@
-package Ejem00_hascode;
+package Ejem01_hascode;
 
 class MiObjeto {
     private int id;

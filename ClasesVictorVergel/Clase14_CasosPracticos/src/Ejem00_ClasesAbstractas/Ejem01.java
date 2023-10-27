@@ -1,8 +1,11 @@
-package Ejem04_ClasesAbstractas;
+package Ejem00_ClasesAbstractas;
 
 abstract class FiguraGeometrica {
     abstract double calcularArea();
-    abstract double calcularPerimetro();
+    double calcularPerimetro() {
+    	System.out.println("implementación de método");
+    	return 0;
+    };
 }
 
 class Circulo extends FiguraGeometrica {
@@ -42,4 +45,34 @@ class Triangulo extends FiguraGeometrica {
         // Implementar cálculo del perímetro de un triángulo
         return 0;
     }
+    
+    
+  
+    
 }
+
+class Ejem01 
+{
+	public void main(String args[])
+	{
+		Circulo cir=new Circulo(0);
+		FiguraGeometrica fg=new FiguraGeometrica() {
+			
+			@Override
+			double calcularPerimetro() {
+				// TODO Auto-generated method stub
+				return 0;
+			}
+			
+			@Override
+			double calcularArea() {
+				// TODO Auto-generated method stub
+				return 0;
+			}
+		};
+	}
+}
+
+
+
+

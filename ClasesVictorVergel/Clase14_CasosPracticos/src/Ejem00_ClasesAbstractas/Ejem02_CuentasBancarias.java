@@ -1,10 +1,18 @@
-package Ejem04_ClasesAbstractas;
+package Ejem00_ClasesAbstractas;
 
 abstract class CuentaBancaria {
     private String titular;
     protected double saldo;
+        
+    public String getTitular() {
+		return titular;
+	}
 
-    public CuentaBancaria(String titular, double saldoInicial) {
+	public void setTitular(String titular) {
+		this.titular = titular;
+	}
+
+	public CuentaBancaria(String titular, double saldoInicial) {
         this.titular = titular;
         this.saldo = saldoInicial;
     }
@@ -32,8 +40,9 @@ class CuentaAhorro extends CuentaBancaria {
 
     @Override
     public void generarInforme() {
-        System.out.println("Cuenta de Ahorro de " + titular + " - Saldo: $" + saldo);
+        System.out.println("Cuenta de Ahorro de " + this.getTitular() + " - Saldo: $" + saldo);
     }
+    
 }
 
 class CuentaCorriente extends CuentaBancaria {
@@ -55,7 +64,7 @@ class CuentaCorriente extends CuentaBancaria {
 
     @Override
     public void generarInforme() {
-        System.out.println("Cuenta Corriente de " + titular + " - Saldo: $" + saldo);
+        System.out.println("Cuenta Corriente de " + this.getTitular() + " - Saldo: $" + saldo);
     }
 }
 

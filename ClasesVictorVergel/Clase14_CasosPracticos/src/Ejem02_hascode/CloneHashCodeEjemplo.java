@@ -1,4 +1,4 @@
-package Ejem01_hascode;
+package Ejem02_hascode;
 
 public class CloneHashCodeEjemplo {
     public static void main(String[] args) {

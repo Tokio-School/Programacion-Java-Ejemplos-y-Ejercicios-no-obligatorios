@@ -1,4 +1,4 @@
-package Ejem01_hascode;
+package Ejem02_hascode;
 
 class Empleado {
     private String nombre;
