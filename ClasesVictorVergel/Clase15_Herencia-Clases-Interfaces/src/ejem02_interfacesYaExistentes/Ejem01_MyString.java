@@ -1,32 +1,37 @@
 package ejem02_interfacesYaExistentes;
 
 public class Ejem01_MyString implements CharSequence {
-    private String value;
+    
+	private String cadena;
 
-    public Ejem01_MyString(String value) {
-        this.value = value;
-    }
+	public Ejem01_MyString(String cadena) {
+		super();
+		this.cadena = cadena;
+	}
 
-    public int length() {
-        return value.length();
-    }
+	@Override
+	public int length() {
+		// TODO Auto-generated method stub
+		return cadena.length();
+	}
 
-    public char charAt(int index) {
-        return value.charAt(index);
-    }
+	@Override
+	public char charAt(int index) {
+		// TODO Auto-generated method stub
+		return cadena.charAt(index);
+	}
 
-    public CharSequence subSequence(int start, int end) {
-        return value.subSequence(start, end);
-    }
+	@Override
+	public CharSequence subSequence(int start, int end) {
+		// TODO Auto-generated method stub
+		return cadena.subSequence(start, end);
+	}
+	
+	public static void main(String args[])
+	{
+		Ejem01_MyString micadena=new Ejem01_MyString("Hola Mundo");
+		System.out.println(micadena.length());
+	}
 
-    public String toString() {
-        return value;
-    }
-
-    public static void main(String[] args) {
-        Ejem01_MyString myString = new Ejem01_MyString("Ejemplo");
-        System.out.println("Longitud: " + myString.length());
-        System.out.println("Carácter en la posición 3: " + myString.charAt(3));
-        System.out.println("Subsecuencia: " + myString.subSequence(1, 4));
-    }
+   
 }

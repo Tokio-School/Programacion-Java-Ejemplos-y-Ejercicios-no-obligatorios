@@ -1,4 +1,4 @@
-package uso_intefaces;
+package ejem03_colores;
 
 public class Color implements Comparable<Color> {
     private String name;
@@ -6,7 +6,25 @@ public class Color implements Comparable<Color> {
     public Color(String name) {
         this.name = name;
     }
-    
+
+    @Override
+    public String toString() {
+        return name;
+    }
+
+    public static void main(String[] args) {
+        Color red = new Color("Red");
+        Color green = new Color("Green");
+        Color blue = new Color("Blue");
+
+        System.out.println("Comparación entre colores:");
+        System.out.println(red + " vs " + green + ": " + red.compareTo(green));
+        System.out.println(green + " vs " + blue + ": " + green.compareTo(blue));
+        System.out.println(blue + " vs " + red + ": " + blue.compareTo(red));
+    }
+
+
+
     @Override
     public int compareTo(Color otherColor) {
         // Definir el orden de los colores basado en su "fuerza" o intensidad
@@ -32,21 +50,5 @@ public class Color implements Comparable<Color> {
             }
         }
         return 0; // Por defecto, los colores son considerados iguales (esto debería manejarse mejor)
-    }
-
-    @Override
-    public String toString() {
-        return name;
-    }
-
-    public static void main(String[] args) {
-        Color red = new Color("Red");
-        Color green = new Color("Green");
-        Color blue = new Color("Blue");
-
-        System.out.println("Comparación entre colores:");
-        System.out.println(red + " vs " + green + ": " + red.compareTo(green));
-        System.out.println(green + " vs " + blue + ": " + green.compareTo(blue));
-        System.out.println(blue + " vs " + red + ": " + blue.compareTo(red));
     }
 }

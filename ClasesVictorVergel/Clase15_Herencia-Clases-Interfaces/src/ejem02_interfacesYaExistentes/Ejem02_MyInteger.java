@@ -12,7 +12,7 @@ public class Ejem02_MyInteger implements Comparable<Ejem02_MyInteger> {
     }
 
     public static void main(String[] args) {
-        Ejem02_MyInteger num1 = new Ejem02_MyInteger(10);
+        Ejem02_MyInteger num1 = new Ejem02_MyInteger(5);
         Ejem02_MyInteger num2 = new Ejem02_MyInteger(5);
 
         if (num1.compareTo(num2) > 0) {

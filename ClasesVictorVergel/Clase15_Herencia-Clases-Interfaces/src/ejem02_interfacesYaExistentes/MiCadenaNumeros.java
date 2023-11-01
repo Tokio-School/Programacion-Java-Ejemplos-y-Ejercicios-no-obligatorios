@@ -45,6 +45,7 @@ public class MiCadenaNumeros implements CharSequence {
             // Ejemplo de subsecuencia
             CharSequence subsequence = miCadena.subSequence(1, 4);
             System.out.println("Subsecuencia: " + subsequence);
+            System.out.println(miCadena.esCadenaNumerica("12345"));
         } catch (IllegalArgumentException e) {
             System.out.println("Error: " + e.getMessage());
         }

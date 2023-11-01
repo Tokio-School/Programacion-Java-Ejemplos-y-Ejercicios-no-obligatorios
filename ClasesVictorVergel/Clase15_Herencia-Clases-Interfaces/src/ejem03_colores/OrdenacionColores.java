@@ -1,4 +1,4 @@
-package uso_intefaces;
+package ejem03_colores;
 
 import java.util.Arrays;
 
