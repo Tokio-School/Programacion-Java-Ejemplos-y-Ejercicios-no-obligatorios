@@ -1,6 +1,7 @@
-package ejem04_arraylist;
+package ejem03_arraylist;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class EjemploArrayList {
     public static void main(String[] args) {
@@ -44,7 +45,20 @@ public class EjemploArrayList {
         }
 
         // Limpiar la lista
-        lista.clear();
+        //lista.clear();
         System.out.println("Lista después de limpiar: " + lista);
+        
+        System.out.println("-------------------");
+        
+        for (int i = 0; i < lista.size();i++) {
+			System.out.println(lista.get(i));  
+		}
+
+        for (Iterator iterator = lista.iterator(); iterator.hasNext();) {
+			String cadena = (String) iterator.next();
+			System.out.println(cadena);
+		}
+        
+        
     }
 }
