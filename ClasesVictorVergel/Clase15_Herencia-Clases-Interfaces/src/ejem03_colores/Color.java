@@ -2,6 +2,7 @@ package ejem03_colores;
 
 public class Color implements Comparable<Color> {
     private String name;
+    private int intensidad;
     
     public Color(String name) {
         this.name = name;
@@ -29,6 +30,7 @@ public class Color implements Comparable<Color> {
     public int compareTo(Color otherColor) {
         // Definir el orden de los colores basado en su "fuerza" o intensidad
         if (this.name.equals("Red")) {
+        	
             if (otherColor.name.equals("Red")) {
                 return 0; // Los colores "Red" son iguales en intensidad
             } else {

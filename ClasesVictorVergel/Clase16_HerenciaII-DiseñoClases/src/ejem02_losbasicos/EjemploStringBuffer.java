@@ -2,11 +2,13 @@ package ejem02_losbasicos;
 
 public class EjemploStringBuffer {
     public static void main(String[] args) {
+    	
         StringBuffer sb = new StringBuffer();
 
         sb.append("Hola, "); // Agregar texto al final
         sb.append("mundo!");
         System.out.println(sb.toString()); // "Hola, mundo!"
+        
 
         sb.insert(5, "querido "); // Insertar texto en una posición específica
         System.out.println(sb.toString()); // "Hola, querido mundo!"

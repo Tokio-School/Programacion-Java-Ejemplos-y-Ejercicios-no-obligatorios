@@ -1,4 +1,4 @@
-package ejem02_losbasicos;
+package ejem01_losbasicos;
 
 import java.util.StringTokenizer;
 
@@ -14,5 +14,9 @@ public class EjemploStringTokenizer {
             String token = tokenizer.nextToken();
             System.out.println("Token: " + token);
         }
+        
+        String[] result = "this is a test".split("\\s");
+        for (int x=0; x<result.length; x++)
+            System.out.println(result[x]);
     }
 }

@@ -2,6 +2,7 @@ package ejem02_losbasicos;
 
 public class EjemploStringBuilder {
     public static void main(String[] args) {
+    	//Igual que StringBuffer pero permite trabajar con procesos.
         StringBuilder sb = new StringBuilder();
 
         sb.append("Hola, "); // Agregar texto al final
