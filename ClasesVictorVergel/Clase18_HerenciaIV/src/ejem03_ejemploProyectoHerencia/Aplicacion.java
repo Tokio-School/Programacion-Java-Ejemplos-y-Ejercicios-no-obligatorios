@@ -1,4 +1,4 @@
-package ejemplo05_DiagramaClases;
+package ejem03_ejemploProyectoHerencia;
 
 public class Aplicacion {
 

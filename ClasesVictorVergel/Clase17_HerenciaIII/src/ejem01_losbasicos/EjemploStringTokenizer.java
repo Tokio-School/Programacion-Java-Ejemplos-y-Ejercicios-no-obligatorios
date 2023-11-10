@@ -27,5 +27,6 @@ public class EjemploStringTokenizer {
         String[] result = "this is a test".split("\\s");
         for (int x=0; x<result.length; x++)
             System.out.println(result[x]);
+        
     }
 }

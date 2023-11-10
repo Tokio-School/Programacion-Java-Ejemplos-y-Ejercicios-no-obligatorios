@@ -1,4 +1,4 @@
-package ejemplo05_DiagramaClases;
+package ejem03_ejemploProyectoHerencia;
 
 /** Tenemos una Persona con Nombre, id generado aleatoriamente,
  *  con un ArrayList de Calificaciones, donde Calificacion se 
