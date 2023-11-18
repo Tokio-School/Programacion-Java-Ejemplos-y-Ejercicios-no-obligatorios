@@ -36,6 +36,9 @@ public class Aplicacion {
 		Sumable<Integer> calculandoEnteros3=Sumable::suma2;
 		System.out.println(calculandoEnteros3.suma(4,5));
 		
+		Sumable<Double> sumaDoubles=Sumable::sumaDoubles;
+		System.out.println(sumaDoubles.suma(3.5, 4.5));
+		
 	}
 	
 }
