@@ -1,0 +1,14 @@
+<ciudades>	
+	<ciudad supercicie="838383">
+		<nombre>Valladolid</nombre>
+		<poblacion>400000</poblacion>
+	</ciudad>
+	<ciudad supercicie="9383">
+		<nombre>Zamora</nombre>
+		<poblacion>1000</poblacion>
+	</ciudad>
+	<ciudad supercicie="83839">
+		<nombre>Buros</nombre>
+		<poblacion>250000</poblacion>
+	</ciudad>
+</ciudades>
