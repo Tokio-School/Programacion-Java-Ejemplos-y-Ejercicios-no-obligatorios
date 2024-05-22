@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App2Controller">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Menu1">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#onActionMenu1" text="Opcion1" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Menu2">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#onActionMenu2" text="Opcion2" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Menu3">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#onActionMenu3" text="Opcion3" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <SplitPane dividerPositions="0.29797979797979796" prefHeight="160.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Accordion fx:id="panelAcordeon">
+                    <panes>
+                      <TitledPane animated="false" text="Mensaje 1">
+                        <content>
+                              <BorderPane>
+                                 <center>
+                                    <Text fx:id="texttMensaje1" strokeType="OUTSIDE" strokeWidth="0.0" text="Hola éste es un mensaje de texto de la primera opción del acordeón." />
+                                 </center>
+                              </BorderPane>
+                        </content>
+                      </TitledPane>
+                      <TitledPane animated="false" text="Mensaje 2">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </TitledPane>
+                      <TitledPane animated="false" text="Mensaje 3">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                        </content>
+                      </TitledPane>
+                    </panes>
+                  </Accordion>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <VBox>
+                     <children>
+                        <TabPane fx:id="panelPestanas" prefHeight="200.0" prefWidth="416.0" tabClosingPolicy="UNAVAILABLE">
+                          <tabs>
+                            <Tab text="Untitled Tab 1">
+                              <content>
+                                    <VBox>
+                                       <children>
+                                          <TextField fx:id="textField_dato" onDragDetected="#onDragDetectedDato" onDragOver="#onDragOverTextView" onKeyReleased="#onkeyReleased" />
+                                          <ListView fx:id="listView" onDragDropped="#onDragDroppedLista" onMouseClicked="#onMouseClickedLista" prefHeight="200.0" prefWidth="200.0" />
+                                          <TreeView fx:id="treeViewDatos" prefHeight="200.0" prefWidth="200.0" />
+                                       </children>
+                                    </VBox>
+                              </content>
+                            </Tab>
+                            <Tab text="Untitled Tab 2">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                              </content>
+                            </Tab>
+                              <Tab text="Untitled Tab">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                </content>
+                              </Tab>
+                          </tabs>
+                        </TabPane>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </center>
+</BorderPane>

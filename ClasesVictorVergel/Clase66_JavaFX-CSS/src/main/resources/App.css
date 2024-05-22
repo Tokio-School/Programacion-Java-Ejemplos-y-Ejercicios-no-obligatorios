@@ -1,0 +1,44 @@
+Label {
+	-fx-background-color: #13193A80;
+	-fx-text-fill: #9DACFF;
+	-fx-text-alignment: right;
+	-fx-wrap-text:true;
+	-fx-padding: 10px 5px 10px 5px;
+}
+
+Button {
+	-fx-background-color: #13193A80;
+	-fx-text-fill: #9DACFF;
+	-fx-start-margin: 5px;
+	-fx-margin: 10px 10px 10px 10px;
+	-fx-border-insets: 5px 5px 5px 5px;
+	-fx-padding: 10px 5px 10px 5px;
+}
+Button:pressed {
+	-fx-background-color: #9DACFF80;
+	-fx-text-fill: #13193A;
+}
+.etiquetas_importantes {
+	-fx-background-color: #FF000080;
+	-fx-text-fill: #000000;
+}
+#etiqueta5 {
+	-fx-background-color: #FFFF0080;
+	-fx-text-fill: #000000;
+}
+
+Label:hover , #etiqueta5:hover {
+	-fx-background-color: #CCCCCC;
+}
+VBox {
+	-fx-border-color: #000000;
+	-fx-border-radius: 10px;
+	-fx-border-style: dashed; 
+	-fx-border-width: 3px;
+	-fx-background-image: url("logoTokio.png");
+	-fx-background-size: contain;
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-padding: 10px;
+}
+
