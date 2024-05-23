@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="borderPane" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App2Controller">
+   <center>
+      <SplitPane fx:id="splitPane" dividerPositions="0.29264214046822745" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+        <items>
+            <VBox>
+               <children>
+                  <Accordion prefHeight="116.0" prefWidth="202.0">
+                    <panes>
+                      <TitledPane animated="false" text="Mensaje 1">
+                        <content>
+                              <BorderPane>
+                                 <center>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Text layoutX="1.0" layoutY="13.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Esto es una prueba del texto que se muestra" wrappingWidth="168.13671875" />
+                                       </children>
+                                    </AnchorPane>
+                                 </center>
+                              </BorderPane>
+                        </content>
+                      </TitledPane>
+                      <TitledPane animated="false" text="Mensaje 2">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                        </content>
+                      </TitledPane>
+                      <TitledPane animated="false" prefHeight="66.0" prefWidth="162.0" text="untitled 3">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                        </content>
+                      </TitledPane>
+                    </panes>
+                  </Accordion>
+               </children>
+            </VBox>
+            <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="Pestaña 1">
+                     <content>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <TextField fx:id="textFieldNombre" onDragDetected="#onDragDetected" onDragOver="#onDragOverTextView" onKeyPressed="#onkeypressedPulsandoIntro" VBox.vgrow="NEVER" />
+                              <ListView fx:id="listView" onDragDropped="#onDragDroppedListView" onDragOver="#onDragOverListView" onMouseClicked="#onMouseClickedListaView" VBox.vgrow="ALWAYS" />
+                              <TreeView fx:id="treeView" VBox.vgrow="ALWAYS" />
+                           </children>
+                        </VBox>
+                     </content>
+                  </Tab>
+                <Tab text="Pestaña 2" />
+                  <Tab text="Pestaña 3">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                    </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+        </items>
+      </SplitPane>
+   </center>
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#onaction_file" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#onaction_edit" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#onaction_help" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>
