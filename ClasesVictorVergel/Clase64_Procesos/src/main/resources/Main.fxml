@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainController">
+   <bottom>
+      <Button fx:id="button_iniciarContador" mnemonicParsing="false" onAction="#iniciarContador" text="Iniciar" BorderPane.alignment="CENTER" />
+   </bottom>
+   <top>
+      <Text fx:id="text_contador" strokeType="OUTSIDE" strokeWidth="0.0" text="0" BorderPane.alignment="CENTER" />
+   </top>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <ProgressBar fx:id="progressbar_barraProgreso" prefHeight="18.0" prefWidth="599.0" progress="0.0">
+               <VBox.margin>
+                  <Insets left="210.0" />
+               </VBox.margin>
+            </ProgressBar>
+            <ProgressBar fx:id="progressbar_barraProgreso2" prefHeight="18.0" prefWidth="598.0" progress="0.0">
+               <VBox.margin>
+                  <Insets left="210.0" />
+               </VBox.margin>
+            </ProgressBar>
+            <ProgressBar fx:id="progress_bar_conService" prefHeight="18.0" prefWidth="600.0" progress="0.0">
+               <VBox.margin>
+                  <Insets left="210.0" />
+               </VBox.margin>
+            </ProgressBar>
+            <TextField />
+            <Rectangle fx:id="shimmer_progreso" arcHeight="5.0" arcWidth="5.0" height="200.0" stroke="BLACK" strokeType="INSIDE" width="1020.0">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.46271929144859314" green="0.4683845043182373" blue="0.4736842215061188" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Rectangle>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
