@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane hgap="10" stylesheets="@../css/styles.css" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/22" fx:controller="com.ejemplo.tienda.controlador.ProductosController">
+    <padding>
+        <Insets bottom="20" left="20" right="20" top="20" />
+    </padding>
+    <children>
+        <Label text="Nombre:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+        <TextField fx:id="nameField" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+        <Label text="Precio:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <TextField fx:id="priceField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <Label text="Foto:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+        <Button text="Seleccionar Foto" onAction="#handleSelectPhotoAction" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        <ImageView fx:id="photoPreview" fitHeight="100" fitWidth="100" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+        <Button onAction="#handleAddProductAction" text="Añadir" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+        <Button onAction="#handleCancelAction" text="Cancelar" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+    </children>
+    <columnConstraints>
+        <ColumnConstraints />
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+    </rowConstraints>
+</GridPane>
