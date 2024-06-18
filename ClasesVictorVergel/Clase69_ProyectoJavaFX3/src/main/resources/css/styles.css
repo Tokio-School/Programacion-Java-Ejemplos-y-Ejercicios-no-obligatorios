@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'Pacifico';
+    src: url('../fonts/Pacifico-Regular.ttf');
+}
+
+.root > *{
+    -fx-font-family: "Pacifico";
+}
+
+/* Button styles */
+.button {
+    -fx-background-color: linear-gradient(#4CAF50, #45a049); /* Gradient green */
+    -fx-text-fill: white;
+    -fx-padding: 10px 20px;
+    -fx-font-size: 14px;
+    -fx-border-radius: 5px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 4, 0, 0, 2);
+}
+
+.text-field {
+    -fx-font-family: "Pacifico";
+    -fx-padding: 5px;
+    -fx-border-color: gray;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-background-color: #ffffff; /* White background */
+    -fx-prompt-text-fill: #92D18B;
+}
+
+
+/* Dialog styles */
+.dialog-pane {
+    -fx-background-color: white;
+    -fx-border-radius: 5px;
+    -fx-border-color: #cccccc;
+    -fx-border-width: 1px;
+}
+
+.dialog-pane .content.label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #333333;
+}
+
+.dialog-pane .header-panel {
+    -fx-background-color: #4CAF50;
+    -fx-padding: 10px;
+}
+
+.dialog-pane .header-panel .label {
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+}
+
+.dialog-pane .button-bar {
+    -fx-background-color: #f4f4f4;
+    -fx-padding: 10px;
+}
+.column-header {
+    -fx-background-color: #4CAF50 !important;
+    -fx-padding: 10px;
+    -fx-text-fill: white;
+    -fx-border-color: gray;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-background-color: #ffffff
+}
+.table-row-cell:selected {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+}

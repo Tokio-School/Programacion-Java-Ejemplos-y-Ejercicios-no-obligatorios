@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="604.0" prefWidth="500.0" stylesheets="@../css/styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ejemplo.tienda.controlador.MainController">
+	<top>
+      <VBox>
+         <children>
+      		<MenuBar>
+      			<Menu text="Inicio">
+      				<MenuItem onAction="#handleAddProductAction" text="Agregar Producto" />
+      				<MenuItem onAction="#handleVolverAlLogin" text="Volver al Login" />
+      				<MenuItem onAction="#handleSalir" text="Salir" />
+      			</Menu>
+      		</MenuBar>
+            <HBox prefHeight="7.0" prefWidth="527.0">
+               <children>
+                  <Label prefHeight="27.0" prefWidth="191.0" text="Inserte nombre de producto a filtrar" />
+                  <TextField fx:id="textfield_filtrado" onKeyReleased="#onkeyReleased_filtrado" promptText="nombre producto" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+	</top>
+	<center>
+      <BorderPane>
+         <center>
+      
+      		<TableView fx:id="productTableView" prefHeight="400.0" prefWidth="482.0">
+      			<columns>
+      				<TableColumn fx:id="nameColumn" prefWidth="178.0" text="Nombre" />
+      				<TableColumn fx:id="priceColumn" prefWidth="150.0" text="Precio" />
+                  <TableColumn fx:id="columnaFechaCaducidad" prefWidth="166.0" text="Fecha Caducidad" />
+      			</columns>
+      		</TableView>
+         </center>
+      </BorderPane>
+	</center>
+   <bottom>
+		<ImageView fx:id="productImageView" fitHeight="150.0" fitWidth="494.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>
