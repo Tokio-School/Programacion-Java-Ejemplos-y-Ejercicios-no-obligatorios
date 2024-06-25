@@ -1,0 +1,20 @@
+2024-06-21 14:12:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Valor Invalido "1" para el parametro "parameterIndex"
+Invalid value "1" for parameter "parameterIndex" [90008-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:590)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.getInvalidValueException(DbException.java:280)
+	at org.h2.jdbc.JdbcPreparedStatement.setParameter(JdbcPreparedStatement.java:1503)
+	at org.h2.jdbc.JdbcPreparedStatement.setString(JdbcPreparedStatement.java:413)
+	at Aplicacion.main(Aplicacion.java:45)
+2024-06-21 14:13:27 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Valor Invalido "1" para el parametro "parameterIndex"
+Invalid value "1" for parameter "parameterIndex" [90008-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:590)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.getInvalidValueException(DbException.java:280)
+	at org.h2.jdbc.JdbcPreparedStatement.setParameter(JdbcPreparedStatement.java:1503)
+	at org.h2.jdbc.JdbcPreparedStatement.setString(JdbcPreparedStatement.java:413)
+	at Aplicacion.main(Aplicacion.java:45)

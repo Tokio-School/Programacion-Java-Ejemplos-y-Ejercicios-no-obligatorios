@@ -1,0 +1,35 @@
+{
+	"folders": {},
+	"connections": {
+		"h2_embedded-1903a956e43-5bd67285cfcff368": {
+			"provider": "h2",
+			"driver": "h2_embedded",
+			"name": "bd_prueba",
+			"save-password": true,
+			"configuration": {
+				"database": "D:\\ts\\20230329-Temario\\Java\\Clase2023-24Workspace\\Clase73_BasesDatos\\src\\main\\resources\\bd_prueba",
+				"url": "jdbc:h2:D:\\ts\\20230329-Temario\\Java\\Clase2023-24Workspace\\Clase73_BasesDatos\\src\\main\\resources\\bd_prueba",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"closeIdleConnection": true,
+				"auth-model": "native"
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false,
+			"smart-commit": false,
+			"smart-commit-recover": false,
+			"auto-close-transactions": true,
+			"close-transactions-period": 1800,
+			"auto-close-connections": true,
+			"close-connections-period": 14400
+		}
+	}
+}
