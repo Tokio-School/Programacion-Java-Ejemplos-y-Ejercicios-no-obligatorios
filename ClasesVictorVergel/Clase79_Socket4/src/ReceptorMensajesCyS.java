@@ -19,9 +19,16 @@ public class ReceptorMensajesCyS extends Thread{
 		do{
 			try {
 				Mensaje mensaje=(Mensaje)ois.readObject();
+				
 				if (mensaje.getNombre_cliente().startsWith("Cliente_"))
 				{
-					System.out.println("Mensaje recibido: "+mensaje.getMensaje());
+					System.out.println("Mensaje recibido: "+mensaje);
+					
+					if (mensaje.getMensaje().equalsIgnoreCase("fin")) {
+						Servidor.canales_salida.remove(mensaje.getNombre_cliente());
+						System.out.println("Se ha eliminado al cliente "+mensaje.getNombre_cliente());
+					}
+					
 					mensaje.setMensaje(mensaje.getMensaje()+" --> del cliente "+mensaje.getNombre_cliente());
 					mensaje.setNombre_cliente("Servidor");
 					Servidor.enviarMensaje(mensaje);
@@ -39,7 +46,10 @@ public class ReceptorMensajesCyS extends Thread{
 				e.printStackTrace();
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
-				e.printStackTrace();
+				System.out.println("Llegó la interrupción del hilo receptor del cliente");
+				finalizar = true;
+				//e.printStackTrace();
+				
 			}
 		}while(!finalizar);
 	}
