@@ -2,6 +2,10 @@ import java.util.Scanner;
 
 public class Aplicacion {
 
+	
+	public final static double PI=3.1416;
+	
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
@@ -17,15 +21,22 @@ public class Aplicacion {
 		
 		System.out.println("La suma es: "+Aplicacion.suma(numero1, numero2));
 		Aplicacion.mostrarResultado(Aplicacion.suma(numero1, numero2));
+		System.out.println("La resta es: "+Aplicacion.resta(numero1, numero2));
+		
+		System.out.println("El valor de PI es "+Aplicacion.PI);
+
+		Aplicacion.cuantoValePI();
+		
+		
+		System.out.println("La división es: "+numero1/numero2);
 		
 	}
-	
 	
 	/**
 	 * Para escribir nombre de variables. Notación Camell
 	 * La primera letra en minuscula
 	 * La primera letra de cada palabra en mayuscula. nombreUsuario, edadPersona
-	 * 
+	 * Todo en mayúsculas para definir constantes. Ej.: PI
 	 */
 	
 	// Función porque devuelve un valor
@@ -40,8 +51,14 @@ public class Aplicacion {
 
 	
 	public static int resta(int valor1,int valor2) {
+		
 		return valor1-valor2;
     }
+	
+	public static void cuantoValePI() {
+		System.out.println("El valor de PI es " + Aplicacion.PI);
+	}
+	
 
 	
 }
