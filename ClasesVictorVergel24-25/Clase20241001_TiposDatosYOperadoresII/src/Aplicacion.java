@@ -9,15 +9,15 @@ public class Aplicacion {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		Scanner teclado=new Scanner(System.in);
+		Scanner teclas=new Scanner(System.in);
 		System.out.println("Introduce tu nombre:");
-		String dato=teclado.nextLine();
+		String dato=teclas.nextLine();
 		System.out.println("hola mundo de "+dato);
 		
 		System.out.println("Introduce numero1:");
-		int numero1=Integer.parseInt(teclado.nextLine());
+		int numero1=Integer.parseInt(teclas.nextLine());
 		System.out.println("Introduce numero2:");
-		int numero2=Integer.parseInt(teclado.nextLine());
+		int numero2=Integer.parseInt(teclas.nextLine());
 		
 		System.out.println("La suma es: "+Aplicacion.suma(numero1, numero2));
 		Aplicacion.mostrarResultado(Aplicacion.suma(numero1, numero2));
@@ -29,6 +29,27 @@ public class Aplicacion {
 		
 		
 		System.out.println("La división es: "+numero1/numero2);
+		
+		
+		// Operadores lógicos
+		// && y || y ! y ==
+		int years=19;
+		boolean esMayorDeEdad=(years>=18);
+		System.out.println("Es mayor de edad: "+esMayorDeEdad);
+		int dinero=30000;
+		boolean puedoComprarCoche=(years>=18 && dinero>=20000);
+		System.out.println("Puedo comprar coche: "+puedoComprarCoche);
+		
+	    boolean esMenorDeEdad=!(years>=18);
+	    System.out.println("Es menor de edad: "+esMenorDeEdad);
+		
+	    
+	    int salario=(years>=18)?2000:100;
+	    System.out.println("Salario: "+salario);
+	    
+	    boolean esMayorDeEdad2=(years==18)?true:false;
+	    
+	    
 		
 	}
 	
