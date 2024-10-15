@@ -43,6 +43,9 @@ public class AplicacionBanderas {
 		
 		System.out.println("Fin del programa");
 		
+		
+		
+		
 	}
 
 }
