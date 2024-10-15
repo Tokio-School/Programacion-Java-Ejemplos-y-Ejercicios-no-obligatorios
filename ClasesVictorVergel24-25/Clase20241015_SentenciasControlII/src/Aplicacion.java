@@ -22,14 +22,20 @@ public class Aplicacion {
 	    	    3:(21<=num && num<=25)?{)*/
 	
 		Scanner teclado	= new Scanner(System.in);
-		System.out.println("Inserte el número: (0 para salir)");
-		int num = teclado.nextInt();
-		int i=0;
-		while (i<num) {
-			System.out.println("El número es: "+i);
-			i++;
-		} 
+		int num =0;
+		do {
+			System.out.println("Inserte el número: (0 para salir)");
+			num = teclado.nextInt();
+			int i = 0;
+			while (i <= num) {
+				System.out.println("El número es: " + i);
+				i++;
+			} 
+		} while (num!=0);
 		System.out.println("Fin del programa");
+		
+		
+		
 		
 		
 		
