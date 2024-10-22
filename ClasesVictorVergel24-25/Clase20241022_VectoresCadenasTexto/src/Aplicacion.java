@@ -1,3 +1,4 @@
+import java.util.Random;
 
 public class Aplicacion {
 
@@ -39,7 +40,23 @@ public class Aplicacion {
 													nombreCompleto.length()));
 		
 		
+		// Funciones estáticas de la clase String.
+		int numero1 = 10;
+		int numero2 = 20;
+		System.out.println(String.valueOf(numero1*numero2));
 		
+		Random random = new Random();
+		for (int j = 0; j < 10; j++) {
+            System.out.println(random.nextInt(1, 10));
+        }
+		System.out.println("----");
+		for (int j = 0; j < 10; j++) {
+            System.out.println((int)(Math.random() * 10));
+        }
+		
+		// Nombre.......Vergel..........Rodriguez
+		// Nombre2......Apellido1.......Apellido2
+		// Nombre3......Apellido1.......Apellido2
 		
 		
 		
