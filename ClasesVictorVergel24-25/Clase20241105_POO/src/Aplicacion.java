@@ -28,13 +28,33 @@ public class Aplicacion {
 		
 		//System.out.println(pepe.getNombre() + " " + pepe.getEdad() + " " + pepe.getAltura() + " " + pepe.getCiudadNacimiento());
 		System.out.println(pepe.toString());
-		System.out.println(juan.toString());
+		System.out.println(juan);
 		
 		System.out.println(pepe.saludar(juan));
 		
 		for (Persona alumno : alumnos) {
 			System.out.println(profesor.saludar(alumno));
 		}
+		
+		
+		Curso cursos[]= {
+				new Curso("Java", 40, 200), 
+				new Curso("Python", 30, 150), 
+				new Curso("C#", 50, 250)};
+		
+		cursos[0].setAlumnosMatriculados(alumnos);
+		cursos[1].setAlumnosMatriculados(alumnos);
+		cursos[1].anadirAlumnoNuevo(profesor);
+		
+		//System.out.println("Numero de alumnos matriculados en "+cursos[0].getNombre()+" son "+cursos[0].dameNumeroAlumnos());
+		System.out.println("Numero de alumnos matriculados en "+cursos[0].getNombre()+" son "+cursos[0].getAlumnosMatriculados().length);
+		System.out.println("Numero de alumnos matriculados en "+cursos[1].getNombre()+" son "+cursos[1].getAlumnosMatriculados().length);
+		
+		
+		for (Curso curso : cursos) {
+			System.out.println(curso.toString());
+		}
+		
 		
 		
 	}
