@@ -1,0 +1,30 @@
+ El volumen de la unidad C es SISTEMA
+ El n£mero de serie del volumen es: 28E4-52C4
+
+ Directorio de C:\
+
+11/09/2023  23:01    <DIR>          AMD
+29/12/2022  13:44    <DIR>          AraSuite
+26/07/2024  01:03    <DIR>          borrar
+20/12/2023  23:34    <DIR>          Copia20231220
+07/05/2024  16:12    <DIR>          Copia20240425
+11/07/2024  19:16    <DIR>          Copia20240625
+11/09/2023  21:28                10 csb.log
+20/10/2023  13:41    <DIR>          eclipse-java-2023-06-R-win32-x86_64_v02
+18/06/2024  16:54    <DIR>          eclipse-java-2023-06-R-win32-x86_64_v03
+01/09/2023  00:00    <DIR>          EjerciciosVideosYouTubeAndroid
+27/04/2024  17:57    <DIR>          eXist-db
+11/09/2023  21:28               195 Install.log
+11/09/2023  21:28    <DIR>          Intel
+22/07/2024  18:08    <DIR>          MSI
+15/07/2024  18:02    <DIR>          Nueva carpeta
+07/05/2022  07:24    <DIR>          PerfLogs
+23/07/2024  18:30    <DIR>          Program Files
+16/04/2024  07:52    <DIR>          Program Files (x86)
+22/07/2024  18:09    <DIR>          pruebas
+02/11/2023  00:22    <DIR>          TokioShool
+12/02/2024  09:37    <DIR>          Users
+10/07/2024  03:44    <DIR>          Windows
+25/06/2024  17:57    <DIR>          xampp
+               2 archivos            205 bytes
+              21 dirs  999.773.257.728 bytes libres
