@@ -13,6 +13,7 @@ public class Aplicacion {
 		System.out.println(p2.getDni());
 		
 		
+		
 	}
 
 }
