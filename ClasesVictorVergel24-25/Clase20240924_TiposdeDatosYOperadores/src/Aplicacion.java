@@ -2,7 +2,7 @@
 public class Aplicacion {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// TODO Auto-generated method stub. Victor.
 		byte edad=18;
 		byte edad2=127;
 		
