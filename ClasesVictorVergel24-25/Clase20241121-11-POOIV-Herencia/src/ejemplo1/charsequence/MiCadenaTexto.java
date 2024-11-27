@@ -7,11 +7,6 @@ public class MiCadenaTexto implements CharSequence {
 	
 	
 	
-	PRACTICA 155555555555555 PARA EL MARTES 
-	y ORDENACIÓN DE LISTAS CON EL COMPARABLE... 
-	
-	
-	
 	
 	
 	
