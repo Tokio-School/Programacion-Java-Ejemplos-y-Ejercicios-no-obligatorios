@@ -1,0 +1,3 @@
+module moduloC {
+	requires moduloA;
+}

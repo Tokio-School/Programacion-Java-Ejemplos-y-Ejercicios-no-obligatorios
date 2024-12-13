@@ -18,8 +18,10 @@ public class Aplicacion {
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		} finally {
+			System.out.println("Esto se ejecuta siempre");
 		}
-		
+		System.out.println("Fin del programa");
 		String cadena[]= {"uno","dos","tres"};
 		
 		for (int i = 0; i <= cadena.length; i++) {
