@@ -1,0 +1,22 @@
+<persons>
+    <person>
+        <name>John</name>
+        <age>30</age>
+    </person>
+    <person>
+        <name>Alice</name>
+        <age>25</age>
+    </person>
+    <person>
+        <name>Bob</name>
+        <age>40</age>
+    </person>
+     <person>
+        <name>Bob</name>
+        <age>40</age>
+    </person>
+    <person>
+        <name>John</name>
+        <age>30</age>
+    </person>
+</persons>
