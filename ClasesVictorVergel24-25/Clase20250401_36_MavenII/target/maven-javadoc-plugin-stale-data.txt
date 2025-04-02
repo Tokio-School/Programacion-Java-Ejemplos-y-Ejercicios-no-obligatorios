@@ -1,0 +1,48 @@
+@options
+@packages
+--class-path
+'F:/ts/20230329-Temario/Java/Clase2024-25Workspace/Clase20250401_36_MavenII/target/classes;C:/Users/victor/.m2/repository/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar'
+-encoding
+'UTF-8'
+-protected
+-source
+'17'
+-sourcepath
+'F:/ts/20230329-Temario/Java/Clase2024-25Workspace/Clase20250401_36_MavenII/src/main/java;F:/ts/20230329-Temario/Java/Clase2024-25Workspace/Clase20250401_36_MavenII/target/generated-sources/annotations'
+-author
+-bottom
+'Copyright &#169; 2025. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'F:/ts/20230329-Temario/Java/Clase2024-25Workspace/Clase20250401_36_MavenII/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'Clase20250401_36_MavenII 0.0.1-SNAPSHOT API'
+-use
+-version
+-windowtitle
+'Clase20250401_36_MavenII 0.0.1-SNAPSHOT API'
+paquete_inicial
+F:\ts\20230329-Temario\Java\Clase2024-25Workspace\Clase20250401_36_MavenII\src\main\java = 1743529288574
+F:\ts\20230329-Temario\Java\Clase2024-25Workspace\Clase20250401_36_MavenII\target\generated-sources\annotations = 1743531391667
+F:\ts\20230329-Temario\Java\Clase2024-25Workspace\Clase20250401_36_MavenII\target\site\apidocs\allclasses-index.html = 1743531393783
+F:\ts\20230329-Temario\Java\Clase2024-25Workspace\Clase20250401_36_MavenII\target\site\apidocs\allpackages-index.html = 1743531393786
+F:\ts\20230329-Temario\Java\Clase2024-25Workspace\Clase20250401_36_MavenII\target\site\apidocs\copy.svg = 1743531393815
+F:\ts\20230329-Temario\Java\Clase2024-25Workspace\Clase20250401_36_MavenII\target\site\apidocs\element-list = 1743531393750
+F:\ts\20230329-Temario\Java\Clase2024-25Workspace\Clase20250401_36_MavenII\target\site\apidocs\help-doc.html = 1743531393811
+F:\ts\20230329-Temario\Java\Clase2024-25Workspace\Clase20250401_36_MavenII\target\site\apidocs\index-all.html = 1743531393805
+F:\ts\20230329-Temario\Java\Clase2024-25Workspace\Clase20250401_36_MavenII\target\site\apidocs\index.html = 1743531393809
+F:\ts\20230329-Temario\Java\Clase2024-25Workspace\Clase20250401_36_MavenII\target\site\apidocs\link.svg = 1743531393816
+F:\ts\20230329-Temario\Java\Clase2024-25Workspace\Clase20250401_36_MavenII\target\site\apidocs\member-search-index.js = 1743531393795
+F:\ts\20230329-Temario\Java\Clase2024-25Workspace\Clase20250401_36_MavenII\target\site\apidocs\module-search-index.js = 1743531393787
+F:\ts\20230329-Temario\Java\Clase2024-25Workspace\Clase20250401_36_MavenII\target\site\apidocs\overview-tree.html = 1743531393776
+F:\ts\20230329-Temario\Java\Clase2024-25Workspace\Clase20250401_36_MavenII\target\site\apidocs\package-search-index.js = 1743531393789
+F:\ts\20230329-Temario\Java\Clase2024-25Workspace\Clase20250401_36_MavenII\target\site\apidocs\script.js = 1743531393813
+F:\ts\20230329-Temario\Java\Clase2024-25Workspace\Clase20250401_36_MavenII\target\site\apidocs\search-page.js = 1743531393819
+F:\ts\20230329-Temario\Java\Clase2024-25Workspace\Clase20250401_36_MavenII\target\site\apidocs\search.html = 1743531393807
+F:\ts\20230329-Temario\Java\Clase2024-25Workspace\Clase20250401_36_MavenII\target\site\apidocs\search.js = 1743531393818
+F:\ts\20230329-Temario\Java\Clase2024-25Workspace\Clase20250401_36_MavenII\target\site\apidocs\stylesheet.css = 1743531393813
+F:\ts\20230329-Temario\Java\Clase2024-25Workspace\Clase20250401_36_MavenII\target\site\apidocs\tag-search-index.js = 1743531393797
+F:\ts\20230329-Temario\Java\Clase2024-25Workspace\Clase20250401_36_MavenII\target\site\apidocs\type-search-index.js = 1743531393792
