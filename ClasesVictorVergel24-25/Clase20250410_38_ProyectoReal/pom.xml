@@ -1,0 +1,75 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.ejemplo</groupId>
+    <artifactId>ejemplo-xr-i18n</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <env>desarrollo</env>
+    </properties>
+<profiles>
+		<profile>
+			<id>desarrollo</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<properties>
+				<env>desarrollo</env>
+			</properties>
+		</profile>
+		<profile>
+			<id>produccion</id>
+			<properties>
+				<env>produccion</env>
+			</properties>
+		</profile>
+		<profile>
+			<id>pruebas</id>
+			<properties>
+				<env>pruebas</env>
+			</properties>
+		</profile>
+	</profiles>
+	
+    <build>
+        <filters>
+            <filter>src/main/resources/config/${env}.properties</filter>
+        </filters>
+
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+                <includes>
+                    <include>configuracion.properties</include>
+                </includes>
+            </resource>
+
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>false</filtering>
+                <excludes>
+                    <exclude>configuracion.properties</exclude>
+                </excludes>
+            </resource>
+        </resources>
+        
+        <plugins>
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>exec-maven-plugin</artifactId>
+          <version>3.5.0</version>
+          <configuration>
+          	<mainClass>com.ejemplo.Aplicacion</mainClass>
+          </configuration>
+        </plugin>
+        
+        </plugins>
+    </build>
+</project>
