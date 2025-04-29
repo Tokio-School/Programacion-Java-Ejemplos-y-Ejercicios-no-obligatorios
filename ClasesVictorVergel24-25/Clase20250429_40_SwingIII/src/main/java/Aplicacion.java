@@ -29,21 +29,10 @@ public class Aplicacion {
 		ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		ventana.getContentPane().setLayout(new BorderLayout());
 		
-		JPanel jpFormulario= new JPanel();
-		GridBagLayout gblFormulario= new GridBagLayout();
-		jpFormulario.setLayout(gblFormulario);
-		GridBagConstraints gbcFormulario= new GridBagConstraints();
-		gbcFormulario.gridx=0;
-		gbcFormulario.gridy=0;
-		gbcFormulario.anchor=GridBagConstraints.WEST;
-		gbcFormulario.fill=GridBagConstraints.HORIZONTAL;
+		JPanel jpFormulario= new JPanel(new GridLayout(5, 2));
+		
 		
 		JLabel jlNombre= new JLabel("Nombre:");
-		jpFormulario.add(jlNombre, gbcFormulario);
-		
-		
-		gbcFormulario.gridx=1;
-		gbcFormulario.gridy=0;
 		JTextField jtfNombre= new JTextField();
 		jlNombre.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
 		//jtfNombre.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
@@ -51,25 +40,18 @@ public class Aplicacion {
 		Border outer = BorderFactory.createLineBorder(Color.GRAY);
 		Border inner = BorderFactory.createEmptyBorder(10, 10, 10, 10);
 		jtfNombre.setBorder(BorderFactory.createCompoundBorder(outer, inner));
-		jpFormulario.add(jtfNombre, gbcFormulario);
 		
 		
 		
 		
-		gbcFormulario.gridx=0;
-		gbcFormulario.gridy=1;
+		
 		JLabel jlSoltero= new JLabel("Soltero:");
-		jpFormulario.add(jlSoltero, gbcFormulario);
-		
-		gbcFormulario.gridx=1;
-		gbcFormulario.gridy=1;
 		JCheckBox jcbSoltero= new JCheckBox();
 		jlSoltero.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
 		jcbSoltero.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
-		jpFormulario.add(jcbSoltero, gbcFormulario);
 		
 		
-		jcbSoltero.addActionListener(new ActionListener() {
+		/*jcbSoltero.addActionListener(new ActionListener() {
 
 			@Override
 			public void actionPerformed(ActionEvent evento) {
@@ -77,7 +59,7 @@ public class Aplicacion {
 				
 			}
 			
-		});
+		});*/
 		
 		jcbSoltero.addActionListener(evento ->{
 			System.out.println(((JCheckBox)evento.getSource()).isSelected());
@@ -86,11 +68,11 @@ public class Aplicacion {
 		
 		
 		
-/*		jpFormulario.add(jlNombre);
+		jpFormulario.add(jlNombre);
 		jpFormulario.add(jtfNombre);
 		jpFormulario.add(jlSoltero);
 		jpFormulario.add(jcbSoltero);
-		*/
+		
 		ventana.getContentPane().add(jpFormulario, BorderLayout.NORTH);
 		
 		JButton jbAceptar= new JButton("Aceptar");
@@ -117,36 +99,26 @@ public class Aplicacion {
 		jpOpciones.setLayout(new GridBagLayout());
 		GridBagConstraints gbcOpciones= new GridBagConstraints();
 		
-		
-		
-		
-		
 		grupoLenguajes.add(jrbJava);
 		grupoLenguajes.add(jrbKotlin);
 		JLabel jlLenguaje= new JLabel("Lenguaje:");
-		
-		
+		///jpFormulario.add(jlLenguaje);
 		gbcOpciones.gridx=0;
 		gbcOpciones.gridy=0;
+		gbcOpciones.gridheight=2;
 		jpOpciones.add(jlLenguaje, gbcOpciones);
-		
-		
-		gbcOpciones.gridx=1;
-		gbcOpciones.gridy=0;
+		gbcOpciones.gridx=0;
+		gbcOpciones.gridy=1;
+		gbcOpciones.gridheight=1;
 		jpOpciones.add(jrbJava, gbcOpciones);
 		gbcOpciones.gridx=1;
 		gbcOpciones.gridy=1;
 		jpOpciones.add(jrbKotlin, gbcOpciones);
-
 		///jpFormulario.add(jrbJava);
 		///JLabel jlVacio= new JLabel("");
 		///jpFormulario.add(jlVacio);
 		///jpFormulario.add(jrbKotlin);
-        
-		gbcFormulario.gridx=0;
-		gbcFormulario.gridy=2;
-		gbcFormulario.gridwidth=2;
-		jpFormulario.add(jpOpciones,gbcFormulario);
+		jpFormulario.add(jpOpciones);
 		
 		jlLenguaje.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
 		jrbJava.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
@@ -155,7 +127,7 @@ public class Aplicacion {
 		
 		
 		
-		/*JLabel jlComentarios= new JLabel("Comentarios:");
+		JLabel jlComentarios= new JLabel("Comentarios:");
 		jlComentarios.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
 		JTextArea jtaComentarios= new JTextArea(3,50);
 		jtaComentarios.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
@@ -184,7 +156,7 @@ public class Aplicacion {
 			
 			
 		});*/
-		/*
+		
 		jtaComentarios.addKeyListener(new KeyAdapter() {
 			@Override
 			public void keyReleased(KeyEvent e) {
@@ -193,7 +165,7 @@ public class Aplicacion {
 			}
 		});
 		
-		*/
+		
 		
 		
 		ventana.getContentPane().add(jbAceptar, BorderLayout.CENTER);
