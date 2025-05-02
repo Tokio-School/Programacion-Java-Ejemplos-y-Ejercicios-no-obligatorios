@@ -1,0 +1,77 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>tokioschool.com</groupId>
+  <artifactId>05-ProyectosMaven</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  <properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>17</maven.compiler.source>
+		<maven.compiler.target>17</maven.compiler.target>
+  </properties>
+  
+  <dependencies>
+  
+	  	<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+		<dependency>
+		    <groupId>org.projectlombok</groupId>
+		    <artifactId>lombok</artifactId>
+		    <version>1.18.38</version>
+		    <scope>provided</scope>
+		</dependency>
+  
+  	
+  </dependencies>
+
+  <build>
+  	<plugins>
+  		<plugin>
+  		 <groupId>org.codehaus.mojo</groupId>
+  		 <artifactId>exec-maven-plugin</artifactId>
+  		 <version>3.5.0</version>
+  		 <configuration>
+  		 	<mainClass>tokioschool.com.Aplicacion</mainClass>
+  		 </configuration>
+  		</plugin>
+  	
+  	<plugin>
+		<groupId>org.apache.maven.plugins</groupId>
+		<artifactId>maven-assembly-plugin</artifactId>
+		<version>3.3.0</version>
+		<configuration>
+			<descriptorRefs>
+				<descriptorRef>jar-with-dependencies</descriptorRef>
+			</descriptorRefs>
+			<archive>
+				<manifest>
+					<mainClass>tokioschool.com.Aplicacion</mainClass>
+				</manifest>
+			</archive>
+		</configuration>
+		<executions>
+			<execution>
+				<phase>package</phase>
+				<goals>
+					<goal>single</goal>
+				</goals>
+			</execution>
+		</executions>
+		</plugin>
+
+  	</plugins>
+  
+  
+  </build>
+  
+  <reporting>
+	<plugins>
+		<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-javadoc-plugin</artifactId>
+			<version>3.6.3</version>
+		</plugin>
+	</plugins>
+</reporting>
+
+  
+</project>

@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"tokioschool.com","l":"Aplicacion"},{"p":"tokioschool.com","l":"CursoProgramacion"}];updateSearchResults();
