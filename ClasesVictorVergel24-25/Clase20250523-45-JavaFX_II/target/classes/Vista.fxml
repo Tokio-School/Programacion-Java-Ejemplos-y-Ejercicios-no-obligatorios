@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador">
+   <center>
+      <Button fx:id="button_recuperarDatos" mnemonicParsing="false" onAction="#onaction_recuperarDatos" text="Recuperar datos" BorderPane.alignment="CENTER" />
+   </center>
+   <left>
+      <TabPane tabClosingPolicy="UNAVAILABLE" tabMaxHeight="400.0" tabMaxWidth="300.0" BorderPane.alignment="CENTER">
+        <tabs>
+          <Tab text="Datos personales">
+               <content>
+                  <VBox>
+                     <children>
+                        <Label fx:id="label_nombre" text="Nombre:" />
+                        <TextField fx:id="text_field_nombre" promptText="Inserte nombre..." />
+                        <Label fx:id="label_edad" text="Edad:" />
+                        <TextField fx:id="text_filed_edad" promptText="Inserte edad..." />
+                        <Label fx:id="label_persona_insertada" />
+                     </children>
+                  </VBox>
+               </content>
+          </Tab>
+          <Tab text="Datos coche">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </left>
+</BorderPane>

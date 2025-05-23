@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'Pacifico';
+    src: url('./fonts/Pacifico-Regular.ttf');
+}
+
+
+* {
+	-fx-font-size: 20px;
+	-fx-font-family: "Pacifico";
+	-fx-padding:10px;
+	-fx-prompt-text-fill: #993322
+}
+
+
+.button {
+	-fx-text-fill: #FFFFFF;
+	-fx-font-weight: bold;
+}
+.text-field {
+	-fx-background-color: #FFFFFF;
+	-fx-border-color: #000000;
+	-fx-border-width: 2px;
+	-fx-border-radius: 5px;
+
+}
