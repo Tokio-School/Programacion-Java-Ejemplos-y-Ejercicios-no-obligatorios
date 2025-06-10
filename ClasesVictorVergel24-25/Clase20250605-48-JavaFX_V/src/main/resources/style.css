@@ -1,4 +1,8 @@
-VBox {
-	-fx-background-color: linear-gradient(to bottom, #4facfe, #00f2fe);
-	-fx-padding: 10;
+VBox  {
+    -fx-background-color: white;
+    -fx-border-color: #e0e0e0;
+    -fx-border-radius: 12;
+    -fx-background-radius: 12;
+    -fx-padding: 20;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0.3, 0, 4);
 }
