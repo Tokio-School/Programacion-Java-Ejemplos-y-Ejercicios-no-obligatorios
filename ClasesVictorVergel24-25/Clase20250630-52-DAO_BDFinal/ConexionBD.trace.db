@@ -1,0 +1,28 @@
+2025-06-30 20:18:23 jdbc[3]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1573)
+	at org.jkiss.dbeaver.ext.generic.model.GenericDataSource.populateClientAppName(GenericDataSource.java:198)
+	at org.jkiss.dbeaver.ext.generic.model.GenericDataSource.openConnection(GenericDataSource.java:161)
+	at org.jkiss.dbeaver.ext.h2.model.H2DataSource.openConnection(H2DataSource.java:74)
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCExecutionContext.connect(JDBCExecutionContext.java:124)
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCRemoteInstance.initializeMainContext(JDBCRemoteInstance.java:106)
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCRemoteInstance.<init>(JDBCRemoteInstance.java:61)
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCDataSource.initializeRemoteInstance(JDBCDataSource.java:125)
+	at org.jkiss.dbeaver.ext.generic.model.GenericDataSource.<init>(GenericDataSource.java:124)
+	at org.jkiss.dbeaver.ext.h2.model.H2DataSource.<init>(H2DataSource.java:43)
+	at org.jkiss.dbeaver.ext.h2.model.H2MetaModel.createDataSourceImpl(H2MetaModel.java:56)
+	at org.jkiss.dbeaver.ext.generic.GenericDataSourceProvider.openDataSource(GenericDataSourceProvider.java:57)
+	at org.jkiss.dbeaver.registry.DataSourceDescriptor.openDataSource(DataSourceDescriptor.java:1419)
+	at org.jkiss.dbeaver.registry.DataSourceDescriptor.connect0(DataSourceDescriptor.java:1271)
+	at org.jkiss.dbeaver.registry.DataSourceDescriptor.connect(DataSourceDescriptor.java:1061)
+	at org.jkiss.dbeaver.runtime.jobs.ConnectJob.run(ConnectJob.java:78)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2025-06-30 20:22:43 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Valor demasiado largo para la columna "NOMBRE CHARACTER": "'Prueba 1' (8)"
+Value too long for column "NOMBRE CHARACTER": "'Prueba 1' (8)"; SQL statement:
+INSERT INTO PRUEBA  VALUES (1, 'Prueba 1') [22001-210]
+2025-06-30 20:23:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Valor demasiado largo para la columna "NOMBRE CHARACTER": "'Pru' (3)"
+Value too long for column "NOMBRE CHARACTER": "'Pru' (3)"; SQL statement:
+INSERT INTO PRUEBA  VALUES (1, 'Pru') [22001-210]
