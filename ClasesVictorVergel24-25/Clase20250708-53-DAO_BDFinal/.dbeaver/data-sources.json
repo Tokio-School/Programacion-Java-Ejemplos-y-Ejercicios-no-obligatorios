@@ -1,0 +1,34 @@
+{
+	"folders": {},
+	"connections": {
+		"h2_embedded_v2-197c20e4e3f-1c5a22088f174b9f": {
+			"provider": "h2",
+			"driver": "h2_embedded_v2",
+			"name": "ConexionBD",
+			"configuration": {
+				"database": "F:\\ts\\20230329-Temario\\Java\\Clase2024-25Workspace\\Clase20250630-52-DAO_BDFinal\\ConexionBD",
+				"url": "jdbc:h2:F:\\ts\\20230329-Temario\\Java\\Clase2024-25Workspace\\Clase20250708-53-DAO_BDFinal\\data\\ConexionBD",
+				"configurationType": "URL",
+				"type": "dev",
+				"closeIdleConnection": true,
+				"auth-model": "native"
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false,
+			"smart-commit": false,
+			"smart-commit-recover": true,
+			"auto-close-transactions": true,
+			"close-transactions-period": 1800,
+			"auto-close-connections": true,
+			"close-connections-period": 14400
+		}
+	}
+}

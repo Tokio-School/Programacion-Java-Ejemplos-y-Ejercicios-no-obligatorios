@@ -1,0 +1,39 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>tokioschool.local</groupId>
+  <artifactId>07-BD</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  <properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>17</maven.compiler.source>
+		<maven.compiler.target>17</maven.compiler.target>
+		<exec.mainClass>Aplicacion</exec.mainClass>
+  </properties>
+  
+  <dependencies>
+  
+	  <dependency>
+		<groupId>com.h2database</groupId>
+		<artifactId>h2</artifactId>
+		<version>2.1.210</version>
+	</dependency>
+
+  
+  </dependencies>
+<build>
+	<plugins>
+		<plugin>
+		<groupId>org.codehaus.mojo</groupId>
+		<artifactId>exec-maven-plugin</artifactId>
+		<version>3.5.1</version>
+		<configuration>
+			<mainClass>Aplicacion</mainClass>
+		</configuration>
+		</plugin>
+	
+	</plugins>
+
+</build>  
+  
+</project>

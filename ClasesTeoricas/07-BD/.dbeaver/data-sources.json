@@ -1,0 +1,33 @@
+{
+	"folders": {},
+	"connections": {
+		"h2_embedded_v2-1980a4499f6-7958fd65c12dfb27": {
+			"provider": "h2",
+			"driver": "h2_embedded_v2",
+			"name": "H2 Embedded V.2",
+			"configuration": {
+				"url": "jdbc:h2:F:\\ts\\20230329-Temario\\Java\\Clase2024-25Workspace\\07-BD\\data\\BD",
+				"configurationType": "URL",
+				"type": "dev",
+				"closeIdleConnection": true,
+				"auth-model": "native"
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false,
+			"smart-commit": false,
+			"smart-commit-recover": true,
+			"auto-close-transactions": true,
+			"close-transactions-period": 1800,
+			"auto-close-connections": true,
+			"close-connections-period": 14400
+		}
+	}
+}
