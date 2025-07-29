@@ -1,7 +1,5 @@
 
 public class Mensaje implements java.io.Serializable {
-	
-	
 	private String dato;
 
 	/**

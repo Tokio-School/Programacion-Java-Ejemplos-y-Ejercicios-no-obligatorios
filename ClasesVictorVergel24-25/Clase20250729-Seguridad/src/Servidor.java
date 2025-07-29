@@ -14,12 +14,18 @@ public class Servidor {
 
 				ObjectInputStream ois = new ObjectInputStream(socket.getInputStream());
 				
-				//String mensaje = (String) ois.readObject();
-				//Mensaje mensaje = (Mensaje) ois.readObject();
-				ois.readObject();
-				//System.out.println("Mensaje recibido: " + mensaje);
-				ObjectOutputStream oos = new ObjectOutputStream(socket.getOutputStream());
-				oos.writeObject("Hola, soy el servidor,bienvenido al servidor");
+				
+				// Problema
+				//ois.readObject();
+				// Solución
+				Object objetoRecibido=null;
+				if ((objetoRecibido=ois.readObject()) instanceof Mensaje) {
+					Mensaje mensaje = (Mensaje) ois.readObject();
+					System.out.println("Mensaje recibido: " + mensaje.getDato());
+				} else {
+					throw new SecurityException("Objeto recibido no es un Mensaje");
+					//System.out.println("Objeto desconocido recibido");
+				}
 
 			
 		} catch (IOException | ClassNotFoundException e) {
