@@ -1,0 +1,30 @@
+<personas>
+   <persona>
+      <nombre>Victor</nombre>
+      <edad>30</edad>
+   </persona>
+   <persona>
+      <nombre>Ana</nombre>
+      <edad>25</edad>
+   </persona>
+   <persona>
+      <nombre>Jorge</nombre>
+      <edad>40</edad>
+   </persona>
+   <persona>
+      <nombre>Jorge</nombre>
+      <edad>40</edad>
+   </persona>
+   <persona>
+      <nombre>Ana</nombre>
+      <edad>25</edad>
+   </persona>
+   <persona>
+      <nombre>Pepito</nombre>
+      <edad>28</edad>
+   </persona>
+   <persona>
+      <nombre>Anita</nombre>
+      <edad>22</edad>
+   </persona>
+</personas>
