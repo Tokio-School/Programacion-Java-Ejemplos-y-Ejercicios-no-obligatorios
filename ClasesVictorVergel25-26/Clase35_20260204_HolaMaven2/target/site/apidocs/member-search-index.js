@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"tokio","c":"Aplicacion","l":"Aplicacion()","u":"%3Cinit%3E()"},{"p":"tokio","c":"Aplicacion","l":"main(String[])","u":"main(java.lang.String[])"},{"p":"tokio","c":"Persona","l":"Persona()","u":"%3Cinit%3E()"},{"p":"tokio","c":"Persona","l":"saludar(Persona)","u":"saludar(tokio.Persona)"}];updateSearchResults();

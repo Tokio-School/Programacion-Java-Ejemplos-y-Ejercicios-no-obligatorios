@@ -1,0 +1,95 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>tokioschool.local</groupId>
+  <artifactId>Clase36_20260210_EjemploJSON</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <properties>
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
+    <env>pruebas</env>
+  </properties>
+  
+  
+  <dependencies>
+	  <dependency>
+	    <groupId>tools.jackson.core</groupId>
+	    <artifactId>jackson-databind</artifactId>
+	    <version>3.0.3</version>
+	    <scope>compile</scope>
+	</dependency>
+	<dependency>
+		<groupId>org.projectlombok</groupId>
+		<artifactId>lombok</artifactId>
+		<version>1.18.42</version>
+	</dependency>
+  
+  </dependencies>
+  
+  
+	  <profiles>
+	    <profile>
+	        <id>desarrollo</id>
+	        <activation>
+	            <activeByDefault>true</activeByDefault>
+	        </activation>
+	        <properties>
+	            <env>desarrollo</env>
+	        </properties>
+	    </profile>
+	    <profile>
+	        <id>produccion</id>
+	        <properties>
+	            <env>produccion</env>
+	        </properties>
+	    </profile>
+	    <profile>
+	        <id>pruebas</id>
+	        <properties>
+	            <env>pruebas</env>
+	        </properties>
+	    </profile>
+	</profiles>
+
+
+  <build>
+    <filters>
+        <filter>src/main/resources/config/${env}.properties</filter>
+    </filters>
+    
+     <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+                <includes>
+                    <include>configuracion.properties</include>
+                </includes>
+            </resource>
+
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>false</filtering>
+                <excludes>
+                    <exclude>configuracion.properties</exclude>
+                </excludes>
+            </resource>
+        </resources>
+    
+    
+  	<plugins>
+  		<plugin>
+  		 <groupId>org.codehaus.mojo</groupId>
+  		 <artifactId>exec-maven-plugin</artifactId>
+  		 <version>3.6.3</version>
+  		 <configuration>
+  		  	<mainClass>Aplicacion</mainClass>
+  		  </configuration>
+  		</plugin>
+  	
+  	</plugins>
+  
+  
+  
+  </build>
+  
+  
+</project>

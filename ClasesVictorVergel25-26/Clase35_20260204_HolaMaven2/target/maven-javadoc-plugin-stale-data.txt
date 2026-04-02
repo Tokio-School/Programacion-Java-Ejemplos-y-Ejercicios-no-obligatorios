@@ -1,0 +1,47 @@
+@options
+@packages
+--class-path
+'E:/ts/20230329-Temario/Java/Clase2025-26Workspace/Clase35_20260204_HolaMaven2/target/classes;C:/Users/victo/.m2/repository/org/apache/commons/commons-lang3/3.18.0/commons-lang3-3.18.0.jar;C:/Users/victo/.m2/repository/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar'
+-encoding
+'UTF-8'
+-protected
+-source
+'17'
+-sourcepath
+'E:/ts/20230329-Temario/Java/Clase2025-26Workspace/Clase35_20260204_HolaMaven2/src/main/java;E:/ts/20230329-Temario/Java/Clase2025-26Workspace/Clase35_20260204_HolaMaven2/target/generated-sources/annotations'
+-author
+-bottom
+'Copyright &#169; 2026. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'E:/ts/20230329-Temario/Java/Clase2025-26Workspace/Clase35_20260204_HolaMaven2/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'Hola mundo Maven 0.0.1-SNAPSHOT API'
+-use
+-version
+-windowtitle
+'Hola mundo Maven 0.0.1-SNAPSHOT API'
+tokio
+E:\ts\20230329-Temario\Java\Clase2025-26Workspace\Clase35_20260204_HolaMaven2\src\main\java = 1770235729925
+E:\ts\20230329-Temario\Java\Clase2025-26Workspace\Clase35_20260204_HolaMaven2\target\generated-sources\annotations = 1770237986674
+E:\ts\20230329-Temario\Java\Clase2025-26Workspace\Clase35_20260204_HolaMaven2\target\site\apidocs\allclasses-index.html = 1770237988465
+E:\ts\20230329-Temario\Java\Clase2025-26Workspace\Clase35_20260204_HolaMaven2\target\site\apidocs\allpackages-index.html = 1770237988467
+E:\ts\20230329-Temario\Java\Clase2025-26Workspace\Clase35_20260204_HolaMaven2\target\site\apidocs\copy.svg = 1770237988495
+E:\ts\20230329-Temario\Java\Clase2025-26Workspace\Clase35_20260204_HolaMaven2\target\site\apidocs\element-list = 1770237988432
+E:\ts\20230329-Temario\Java\Clase2025-26Workspace\Clase35_20260204_HolaMaven2\target\site\apidocs\help-doc.html = 1770237988491
+E:\ts\20230329-Temario\Java\Clase2025-26Workspace\Clase35_20260204_HolaMaven2\target\site\apidocs\index-all.html = 1770237988485
+E:\ts\20230329-Temario\Java\Clase2025-26Workspace\Clase35_20260204_HolaMaven2\target\site\apidocs\index.html = 1770237988489
+E:\ts\20230329-Temario\Java\Clase2025-26Workspace\Clase35_20260204_HolaMaven2\target\site\apidocs\member-search-index.js = 1770237988479
+E:\ts\20230329-Temario\Java\Clase2025-26Workspace\Clase35_20260204_HolaMaven2\target\site\apidocs\module-search-index.js = 1770237988469
+E:\ts\20230329-Temario\Java\Clase2025-26Workspace\Clase35_20260204_HolaMaven2\target\site\apidocs\overview-tree.html = 1770237988458
+E:\ts\20230329-Temario\Java\Clase2025-26Workspace\Clase35_20260204_HolaMaven2\target\site\apidocs\package-search-index.js = 1770237988472
+E:\ts\20230329-Temario\Java\Clase2025-26Workspace\Clase35_20260204_HolaMaven2\target\site\apidocs\script.js = 1770237988494
+E:\ts\20230329-Temario\Java\Clase2025-26Workspace\Clase35_20260204_HolaMaven2\target\site\apidocs\search-page.js = 1770237988498
+E:\ts\20230329-Temario\Java\Clase2025-26Workspace\Clase35_20260204_HolaMaven2\target\site\apidocs\search.html = 1770237988488
+E:\ts\20230329-Temario\Java\Clase2025-26Workspace\Clase35_20260204_HolaMaven2\target\site\apidocs\search.js = 1770237988496
+E:\ts\20230329-Temario\Java\Clase2025-26Workspace\Clase35_20260204_HolaMaven2\target\site\apidocs\stylesheet.css = 1770237988493
+E:\ts\20230329-Temario\Java\Clase2025-26Workspace\Clase35_20260204_HolaMaven2\target\site\apidocs\tag-search-index.js = 1770237988480
+E:\ts\20230329-Temario\Java\Clase2025-26Workspace\Clase35_20260204_HolaMaven2\target\site\apidocs\type-search-index.js = 1770237988475
